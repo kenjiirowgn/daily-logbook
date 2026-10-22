@@ -76,7 +76,7 @@ function exportExcel(){if(!window.XLSX)return toast('Library Excel belum termuat
 function init(){load();buildRatings();$('actdate').value=TODAY;$('goaldate').value=TODAY;$('refdate').value=TODAY;$('todaydate').textContent=pd(TODAY).toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'}).toUpperCase();renderAll()}init();
 </script><script>if('serviceWorker' in navigator && location.protocol.startsWith('http')){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));}</script><script>
 /* Replace these placeholders with Supabase Project URL and Publishable key. Never use a secret/service_role key here. */
-const DAILIO_SUPABASE_URL="PASTE_YOUR_SUPABASE_PROJECT_URL_HERE";
+const DAILIO_SUPABASE_URL="https://jbutufoyvtagxvxngigw.supabase.co";
 const DAILIO_SUPABASE_PUBLISHABLE_KEY="PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE";
 let dailioSupabase=null,dailioAuthMode="login";
 function dailioSetAuthMode(mode){dailioAuthMode=mode;const s=mode==="signup";document.getElementById("auth-tab-login").classList.toggle("active",!s);document.getElementById("auth-tab-signup").classList.toggle("active",s);document.getElementById("auth-heading").textContent=s?"Create your account.":"Welcome back.";document.getElementById("auth-subheading").textContent=s?"Mulai memahami ke mana waktumu pergi.":"Login untuk melanjutkan perjalanan memahami waktumu.";document.getElementById("auth-submit").textContent=s?"Buat akun":"Login";document.getElementById("auth-password").autocomplete=s?"new-password":"current-password";document.getElementById("auth-message").textContent=""}
