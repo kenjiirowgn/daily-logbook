@@ -3,8 +3,8 @@
   "short_name": "Dailio",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#cfe2ff",
-  "theme_color": "#8dbbff",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "apple-touch-icon.png",
