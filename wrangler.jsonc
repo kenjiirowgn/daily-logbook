@@ -1,0 +1,13 @@
+{
+  // Dailio: static app (index.html etc.) + /api sync endpoints in worker.js
+  "name": "daily-logbook",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-19",
+  "workers_dev": true,
+  "routes": [{ "pattern": "dailio.njiro.my.id", "custom_domain": true }],
+  "assets": { "directory": ".", "binding": "ASSETS" },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "dailio-db", "database_id": "b359a898-acc1-4af7-aa6f-b6ae56b07389" }
+  ],
+  "observability": { "enabled": true }
+}
