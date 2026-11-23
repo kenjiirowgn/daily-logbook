@@ -1,4 +1,4 @@
-const CACHE = 'dailio-cache-v4';
+const CACHE = 'dailio-cache-v6';
 const APP_SHELL = './index.html';
 const PRECACHE_FILES = [
   './',
