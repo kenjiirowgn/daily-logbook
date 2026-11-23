@@ -342,8 +342,7 @@ html,body{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 /* Sky reaches under the status bar (black-translucent) with a soft fade, no hard edge */
 html{background:#8dbbff}
 body,body[style]{background:linear-gradient(180deg,#8dbbff 0,#b9d5ff 140px,#e3eeff 300px,#e8f1ff 420px,#cfe2ff 75%,#9fc4ff 100%)!important;min-height:100vh}
-body::after{content:"";position:fixed;top:0;left:0;right:0;height:calc(env(safe-area-inset-top) + 18px);background:linear-gradient(180deg,#8dbbff 0,#8dbbffd9 calc(100% - 18px),#8dbbff00 100%);pointer-events:none;z-index:40}
-@supports(backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px)){body::after{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);-webkit-mask-image:linear-gradient(#000 calc(100% - 18px),transparent);mask-image:linear-gradient(#000 calc(100% - 18px),transparent)}}
+body::after{content:"";position:fixed;top:0;left:0;right:0;height:calc(env(safe-area-inset-top) + 36px);background:linear-gradient(180deg,rgb(141,187,255) 0,rgb(141,187,255) env(safe-area-inset-top),rgba(141,187,255,.82) calc(env(safe-area-inset-top) + 7px),rgba(141,187,255,.55) calc(env(safe-area-inset-top) + 15px),rgba(141,187,255,.28) calc(env(safe-area-inset-top) + 24px),rgba(141,187,255,.1) calc(env(safe-area-inset-top) + 31px),rgba(141,187,255,0) 100%);pointer-events:none;z-index:40}
 .app{padding-top:calc(22px + env(safe-area-inset-top))!important}
 @media(max-width:700px){.app{padding-top:calc(12px + env(safe-area-inset-top))!important}}
 #dailio-auth-gate{background:linear-gradient(180deg,#8dbbff 0,#b9d5ff 160px,#e8f1ff 420px,#cfe2ff 70%,#9fc4ff)!important;padding-top:calc(24px + env(safe-area-inset-top))!important}
